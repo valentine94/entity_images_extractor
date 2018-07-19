@@ -16,7 +16,7 @@ interface EntityImagesExtractorInterface extends ContainerInjectionInterface {
   /**
    * Set the current entity from the request.
    */
-  public function setCurrentEntity();
+  public function setEntityFromRequest();
 
   /**
    * Additional method to allow the processed entity being overridden.
