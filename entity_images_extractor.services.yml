@@ -1,0 +1,11 @@
+services:
+  entity_images_extractor:
+    class: Drupal\entity_images_extractor\Service\EntityImagesExtractor
+    calls:
+      - [setCurrentEntity]
+      - [setEntityInfo]
+    arguments:
+      - '@entity_field.manager'
+      - '@entity_type.manager'
+      - '@entity.repository'
+      - '@current_route_match'

@@ -1,0 +1,4 @@
+name: Entity Images Extractor
+description: "Module that providing a service that can extract all images(from images and wysiwyg fields) from within the entity."
+core: 8.x
+package: Other
