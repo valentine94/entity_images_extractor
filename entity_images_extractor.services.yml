@@ -2,7 +2,7 @@ services:
   entity_images_extractor:
     class: Drupal\entity_images_extractor\Service\EntityImagesExtractor
     calls:
-      - [setCurrentEntity]
+      - [setEntityFromRequest]
       - [setEntityInfo]
     arguments:
       - '@entity_field.manager'
