@@ -151,7 +151,7 @@ class EntityImagesExtractor implements EntityImagesExtractorInterface {
   /**
    * {@inheritdoc}
    */
-  public static function getImageUrlAndType(FileInterface $file) {
+  public static function getImageUrlAndType(FileInterface $file):array {
     return [
       'url'  => file_create_url($file->getFileUri()),
       'type' => $file->getMimeType(),
@@ -169,7 +169,7 @@ class EntityImagesExtractor implements EntityImagesExtractorInterface {
    * @return array
    *   Field machine names array.
    */
-  protected function collectFieldsByType(string $field_type) {
+  protected function collectFieldsByType(string $field_type):array {
     $fields = [];
     // Get fields map by field type and entity type.
     $fields_map = $this->getFieldsMap($field_type);
