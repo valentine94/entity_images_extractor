@@ -98,7 +98,7 @@ class EntityImagesExtractor implements EntityImagesExtractorInterface {
   /**
    * {@inheritdoc}
    */
-  public function setCurrentEntity() {
+  public function setEntityFromRequest() {
     $this->entity = NULL;
     $parameters   = $this->routeMatch->getParameters();
     $entity_types = array_keys($this->entityTypeManager->getDefinitions());
